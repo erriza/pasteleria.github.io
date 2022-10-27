@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+    margin: 0;
+    background: lightgray;
+    text-align: center;
+    font-family: sans-serif;
+    height: 100vh;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #8B384A;
+}
+
+span {
+  vertical-align: bottom;
+  margin: bottom;
+  font-size: 2rem;
+  font-family: 'Tangerine', sans-serif;
+  font-weight: 700;
+}
+
+.Tittle {
+  margin-left: 60px;
+  position: fixed;
+}
+
+.logo-pastel {
+    max-width: 50px;
+    padding-right: 20px;
+}
+
+.logo-compra {
+  max-width: 45px;
+  color: #8B384A;
+  cursor: pointer;
+}
+
+.section-mid{
+  padding-top: 500px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.section-low{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+  }
+  
+  .logo-fb {
+    color: #8B384A;
+    width: 300;
+  }
+
+  .carousel__face:nth-child(1) {
+    background-image: url("./../Assets/pastelChocolate.jpg");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("./../Assets/pastelaBerrys.jpg");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("./../Assets/weddingCake.jpg");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("./../Assets/payFresa.jpg");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("./../Assets/pastelRosa.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("./../Assets/baguette.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("./../Assets/PanqueOregano.jpg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("./../Assets/donuts.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("./../Assets/Tartaletas.jpg");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
